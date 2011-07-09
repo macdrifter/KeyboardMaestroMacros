@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>myClip</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>pinUserName</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>postStatus</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>pinPass</string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>Matches</string>
+									<key>ClipboardText</key>
+									<string>^http://</string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>Matches</string>
+									<key>ClipboardText</key>
+									<string>^https://</string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>Matches</string>
+									<key>ClipboardText</key>
+									<string>^ftp://</string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>Matches</string>
+									<key>ClipboardText</key>
+									<string>^HTTP://</string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>Contains</string>
+									<key>ClipboardText</key>
+									<string>^HTTPS://</string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>Matches</string>
+									<key>ClipboardText</key>
+									<string>^FTP://</string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>Any</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>Alert</string>
+								<key>Text</key>
+								<string>%Variable%myClip% is not a URL</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>Keyboard Maestro Alert</string>
+							</dict>
+						</array>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>Ok</string>
+										<key>Cancel</key>
+										<false/>
+									</dict>
+									<dict>
+										<key>Button</key>
+										<string>Cancel</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Please provide optional Tags (separated by spaces)</string>
+								<key>ResultButtonVariable</key>
+								<string>Result Button</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>Pinboard Bookmark Information</string>
+								<key>Variables</key>
+								<array>
+									<dict>
+										<key>Default</key>
+										<string></string>
+										<key>Variable</key>
+										<string>Tags</string>
+									</dict>
+								</array>
+							</dict>
+							<dict>
+								<key>DisplayKind</key>
+								<string>Variable</string>
+								<key>File</key>
+								<data>
+								</data>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>ExecuteShellScript</string>
+								<key>NewFile</key>
+								<string></string>
+								<key>Text</key>
+								<string>#!/usr/bin/env python 
+import os
+import pinboard
+import lxml.html
+pyURL= os.getenv('KMVAR_myClip')
+pyTitle = os.getenv('KMVAR_Title')
+pyTag = os.getenv('KMVAR_Tag')
+pyAccount = os.getenv('KMVAR_pinUserName')
+pyPass = os.getenv('KMVAR_pinPass')
+pyStatus = pyURL
+if pyURL is not None:
+	t = lxml.html.parse(pyURL)
+	myTitle = t.find(".//title").text
+	if myTitle is not None:
+		pyTitle = myTitle
+	pyStatus = pyTitle
+	try:
+		p = pinboard.open(pyAccount, pyPass)
+		p.add(url= pyURL, description= pyTitle, tags= (pyTag))
+		print pyStatus
+	except (RuntimeError, TypeError, NameError):
+		pyStatus = "Error"
+		print pyStatus</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+								<key>Variable</key>
+								<string>postStatus</string>
+							</dict>
+							<dict>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>postStatus</string>
+											<key>VariableConditionType</key>
+											<string>Contains</string>
+											<key>VariableValue</key>
+											<string>Error</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array>
+									<dict>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>Growl</string>
+										<key>Text</key>
+										<string>Pinboard Post for %Variable%postStatus% Complete</string>
+										<key>Title</key>
+										<string>Pinboard Post Complete</string>
+									</dict>
+								</array>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>Alert</string>
+										<key>Text</key>
+										<string>%Variable%postStatus%
+%Variable%myClip%
+
+There was an error posting to Pinboard</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>Title</key>
+										<string>Keyboard Maestro Alert</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Send To Pinboard</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>MacroPalette</string>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2560</integer>
+						<key>TriggerRepeat</key>
+						<false/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>12AB37F0-247E-44F7-91D7-397AF5D72C6E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Mine</string>
+		<key>UID</key>
+		<string>50CF75E3-C58F-48BB-BF65-F5A60FFBA3F1</string>
+	</dict>
+</array>
+</plist>
