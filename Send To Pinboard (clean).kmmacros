@@ -18,6 +18,24 @@
 						<key>IsDisclosed</key>
 						<true/>
 						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>Macro to submit a url to the Pinboard bookmarking service.
+
+Set the pinUserName and pinPass with your Pinboard.in login credentials. 
+
+This macro requires the python-pinboard library at https://github.com/mgan59/python-pinboard and the Growl notification service.
+
+This macro is provided without guarantees, support or liability to the original author, Gabriel Weatherhead. Also, don't be dick (TM Wil Wheaton).</string>
+						<key>Title</key>
+						<string>FAQ</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
 						<string>%CurrentClipboard%</string>
@@ -216,7 +234,7 @@ if pyURL is not None:
 	try:
 		p = pinboard.open(pyAccount, pyPass)
 		p.add(url= pyURL, description= pyTitle, tags= (pyTag))
-		print pyStatus
+		print pyStatus.encode('ascii', 'replace')
 	except (RuntimeError, TypeError, NameError):
 		pyStatus = "Error"
 		print pyStatus</string>
