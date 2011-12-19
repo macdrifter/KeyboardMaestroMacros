@@ -58,18 +58,6 @@ end tell</string>
 						<true/>
 						<key>IsDisclosed</key>
 						<true/>
-						<key>MacroActionType</key>
-						<string>SetVariableToCalculation</string>
-						<key>Text</key>
-						<string>lenClip</string>
-						<key>Variable</key>
-						<string>lenClip</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
 						<key>KeyCode</key>
 						<integer>9</integer>
 						<key>MacroActionType</key>
@@ -98,7 +86,7 @@ end tell</string>
 							</dict>
 						</array>
 						<key>Count</key>
-						<integer>9</integer>
+						<integer>13</integer>
 						<key>CountExpression</key>
 						<string>lenClip</string>
 						<key>IsActive</key>
