@@ -259,7 +259,7 @@
 						<string>title: %Variable%NoteTitle%
 \ncategory: 
 \ntags: %Variable%Tag%
-\ncate: %ShortDate% %LongTime%
+\ndate: %ShortDate% %LongTime%
 \n\n
 \n%Variable%Note Text%</string>
 						<key>Variable</key>
