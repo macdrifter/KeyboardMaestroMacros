@@ -216,6 +216,7 @@ This macro is provided without guarantees, support or liability to the original 
 import os
 import pinboard
 import lxml.html
+import urllib2
 pyURL= os.getenv('KMVAR_myClip')
 pyTitle = os.getenv('KMVAR_Title')
 pyTag = os.getenv('KMVAR_Tag')
