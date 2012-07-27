@@ -203,16 +203,13 @@ This macro is provided without guarantees, support or liability to the original 
 							<dict>
 								<key>DisplayKind</key>
 								<string>Variable</string>
-								<key>File</key>
-								<data>
-								</data>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
 								<true/>
 								<key>MacroActionType</key>
 								<string>ExecuteShellScript</string>
-								<key>NewFile</key>
+								<key>Path</key>
 								<string></string>
 								<key>Text</key>
 								<string>#!/usr/bin/env python 
@@ -225,8 +222,9 @@ pyTag = os.getenv('KMVAR_Tag')
 pyAccount = os.getenv('KMVAR_pinUserName')
 pyPass = os.getenv('KMVAR_pinPass')
 pyStatus = pyURL
+response = urllib2.urlopen(pyURL)
 if pyURL is not None:
-	t = lxml.html.parse(pyURL)
+	t = lxml.html.parse(response)
 	myTitle = t.find(".//title").text
 	if myTitle is not None:
 		pyTitle = myTitle
@@ -318,7 +316,7 @@ There was an error posting to Pinboard</string>
 				<key>IsActive</key>
 				<true/>
 				<key>Name</key>
-				<string>Send To Pinboard</string>
+				<string>Send To Pinboard (Clean)</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -343,7 +341,7 @@ There was an error posting to Pinboard</string>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>12AB37F0-247E-44F7-91D7-397AF5D72C6E</string>
+				<string>34E8D397-EFCB-4783-8BF5-4B598B212E9A</string>
 			</dict>
 		</array>
 		<key>Name</key>
