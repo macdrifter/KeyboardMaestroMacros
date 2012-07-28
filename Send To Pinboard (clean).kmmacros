@@ -219,7 +219,7 @@ import lxml.html
 import urllib2
 pyURL= os.getenv('KMVAR_myClip')
 pyTitle = os.getenv('KMVAR_Title')
-pyTag = os.getenv('KMVAR_Tags)
+pyTag = os.getenv('KMVAR_Tags')
 pyAccount = os.getenv('KMVAR_pinUserName')
 pyPass = os.getenv('KMVAR_pinPass')
 pyStatus = pyURL
