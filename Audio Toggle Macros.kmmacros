@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>35</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>7980FC57-74A5-47FE-A46E-98593F499346</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>6FFA1C86-72F8-4B8A-9A4D-8015B2863ED2</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>1. Record</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>18</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>TriggerRepeat</key>
+						<false/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>B1D2024F-220B-4089-A7A4-2D26FB81A25E</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Hot Palette - Podcasting (ctrl-opt-P)</string>
+		<key>UID</key>
+		<string>F62FA36D-C656-42E1-BE8E-5ED326478479</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>35</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9F627943-E08D-4514-A09F-3D5756029010</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>5DB67750-2324-47FC-BE58-4B1EF3A65AFC</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>2. Normal</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>19</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>TriggerRepeat</key>
+						<false/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>DAD29264-CA44-4373-BB4D-C1F52FB1A0E9</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Hot Palette - Podcasting (ctrl-opt-P)</string>
+		<key>UID</key>
+		<string>F62FA36D-C656-42E1-BE8E-5ED326478479</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>35</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "System Preferences"
+   activate
+   set current pane to pane id "com.apple.preference.sound"
+end tell
+tell application "System Events"
+   tell process "System Preferences"
+       set frontmost to true
+       --get properties of UI element of tab group of window "Sound"
+       click radio button "input" of tab group of window "Sound"
+       set theRows to every row of table 1 of scroll area 1 of ¬
+      tab group 1 of window "sound"
+    set theOutputs to {} as list
+    repeat with aRow in theRows
+      if (value of text field 1 of aRow as text) ¬
+        is equal to "Internal microphone" then
+        set selected of aRow to true
+        exit repeat
+      end if
+    end repeat
+
+   end tell
+end tell
+tell application "System Preferences" to quit</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>Variable</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Audio Input Mac</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>9F627943-E08D-4514-A09F-3D5756029010</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Hot Palette - Podcasting (ctrl-opt-P)</string>
+		<key>UID</key>
+		<string>F62FA36D-C656-42E1-BE8E-5ED326478479</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>35</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "System Preferences"
+   activate
+   set current pane to pane id "com.apple.preference.sound"
+end tell
+tell application "System Events"
+   tell process "System Preferences"
+       set frontmost to true
+       --get properties of UI element of tab group of window "Sound"
+       click radio button "input" of tab group of window "Sound"
+       set theRows to every row of table 1 of scroll area 1 of ¬
+      tab group 1 of window "sound"
+    set theOutputs to {} as list
+    repeat with aRow in theRows
+      if (value of text field 1 of aRow as text) ¬
+        is equal to "Rode Podcaster" then
+        set selected of aRow to true
+        exit repeat
+      end if
+    end repeat
+
+   end tell
+end tell
+tell application "System Preferences" to quit</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>Variable</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Audio Input Rode</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>7980FC57-74A5-47FE-A46E-98593F499346</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Hot Palette - Podcasting (ctrl-opt-P)</string>
+		<key>UID</key>
+		<string>F62FA36D-C656-42E1-BE8E-5ED326478479</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>35</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "System Preferences"
+   activate
+   set current pane to pane id "com.apple.preference.sound"
+end tell
+tell application "System Events"
+   tell process "System Preferences"
+       set frontmost to true
+       --get properties of UI element of tab group of window "Sound"
+       click radio button "output" of tab group of window "Sound"
+       set theRows to every row of table 1 of scroll area 1 of ¬
+      tab group 1 of window "sound"
+    set theOutputs to {} as list
+    repeat with aRow in theRows
+      if (value of text field 1 of aRow as text) ¬
+        is equal to "Headphones" then
+        set selected of aRow to true
+        exit repeat
+      end if
+    end repeat
+
+   end tell
+end tell
+tell application "System Preferences" to quit</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>Variable</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Audio Output Headphones</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>5DB67750-2324-47FC-BE58-4B1EF3A65AFC</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Hot Palette - Podcasting (ctrl-opt-P)</string>
+		<key>UID</key>
+		<string>F62FA36D-C656-42E1-BE8E-5ED326478479</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>35</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "System Preferences"
+   activate
+   set current pane to pane id "com.apple.preference.sound"
+end tell
+tell application "System Events"
+   tell process "System Preferences"
+       set frontmost to true
+       --get properties of UI element of tab group of window "Sound"
+       click radio button "output" of tab group of window "Sound"
+       set theRows to every row of table 1 of scroll area 1 of ¬
+      tab group 1 of window "sound"
+    set theOutputs to {} as list
+    repeat with aRow in theRows
+      if (value of text field 1 of aRow as text) ¬
+        is equal to "Rode Podcaster" then
+        set selected of aRow to true
+        exit repeat
+      end if
+    end repeat
+
+   end tell
+end tell
+tell application "System Preferences" to quit</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>Variable</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Audio Output Rode</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>6FFA1C86-72F8-4B8A-9A4D-8015B2863ED2</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Hot Palette - Podcasting (ctrl-opt-P)</string>
+		<key>UID</key>
+		<string>F62FA36D-C656-42E1-BE8E-5ED326478479</string>
+	</dict>
+</array>
+</plist>
